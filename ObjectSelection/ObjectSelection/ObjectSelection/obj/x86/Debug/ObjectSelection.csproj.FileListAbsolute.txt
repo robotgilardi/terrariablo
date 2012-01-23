@@ -1,0 +1,19 @@
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\LargeAsteroid.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Ship.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ship2.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\AsteroidTexture.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\metal.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ShipTexture.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\AsteroidTexture_0.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ShipTexture_0.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\metal_0.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\font.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\ObjectSelection.exe
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\ObjectSelection.pdb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\obj\x86\Debug\ObjectSelection.exe
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\obj\x86\Debug\ObjectSelection.pdb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\The Path of the Goblin King.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Not As It Seems.xnb
+C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Not As It Seems.wma

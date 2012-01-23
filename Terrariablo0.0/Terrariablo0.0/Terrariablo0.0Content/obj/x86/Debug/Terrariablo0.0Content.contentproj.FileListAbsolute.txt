@@ -1,0 +1,2 @@
+C:\Users\Administrator\VCProjects\Terrariablo0.0\Terrariablo0.0\Terrariablo0.0Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\VCProjects\Terrariablo0.0\Terrariablo0.0\Terrariablo0.0Content\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>models\Helicopter.fbx</Source>
+      <Name>models\Helicopter</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\Helicopter.xnb</Output>
+      <Time>2009-01-03T09:30:48-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\models\Helicopter_0.xml</Key>
+        <Value>2012-01-22T20:41:21.8086937-06:00</Value>
+      </Dependency>
+      <Request>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>models\HelicopterHeightMap.tga</Source>
+      <Name>models\HelicopterHeightMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterHeightMap.xnb</Output>
+      <Time>2009-01-22T14:23:42-06:00</Time>
+    </Item>
+    <Item>
+      <Source>models\HelicopterNormalMap.tga</Source>
+      <Name>models\HelicopterNormalMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterNormalMap.xnb</Output>
+      <Time>2009-01-22T14:23:54-06:00</Time>
+    </Item>
+    <Item>
+      <Source>models\HelicopterTexture.png</Source>
+      <Name>models\HelicopterTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture.xnb</Output>
+      <Time>2009-01-03T09:24:00-06:00</Time>
+    </Item>
+    <Item>
+      <Source>models\Helicopter.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\models\Helicopter_0.xml</Output>
+      <Time>2009-01-03T09:30:48-06:00</Time>
+    </Item>
+    <Item>
+      <Source>models\HelicopterTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Output>
+      <Time>2009-01-03T09:24:00-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-01-22T16:36:36.4652274-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

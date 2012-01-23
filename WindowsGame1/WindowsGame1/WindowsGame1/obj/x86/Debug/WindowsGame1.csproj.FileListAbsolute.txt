@@ -1,0 +1,16 @@
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\3i5Rc.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\earth.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\shuttle.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\stars.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\kootenay.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\SmileyWalk.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\arrow.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\circle.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\diamond.xnb
+C:\Users\Administrator\VCProjects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\images\star.xnb
