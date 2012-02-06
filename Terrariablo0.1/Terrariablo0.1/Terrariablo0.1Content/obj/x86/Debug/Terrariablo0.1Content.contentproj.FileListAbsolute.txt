@@ -1,0 +1,2 @@
+C:\Users\Robot\Documents\Visual Studio 2010\Projects\Terrariablo0.1\Terrariablo0.1\Terrariablo0.1Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Robot\terrariablo\Terrariablo0.1\Terrariablo0.1\Terrariablo0.1Content\obj\x86\Debug\ResolveAssemblyReference.cache

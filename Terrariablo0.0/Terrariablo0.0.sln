@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terrariablo0.0", "Terrariablo0.0\Terrariablo0.0\Terrariablo0.0.csproj", "{1F0AA16A-E8C1-4A27-8F6C-7172A7B9078D}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Terrariablo0.0Content", "Terrariablo0.0\Terrariablo0.0Content\Terrariablo0.0Content.contentproj", "{9F6E4AD7-2F45-4A12-B6BA-E273AAE33572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terrariablo0.0Content", "Terrariablo0.0\Terrariablo0.0Content\Terrariablo0.0Content.contentproj", "{9F6E4AD7-2F45-4A12-B6BA-E273AAE33572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

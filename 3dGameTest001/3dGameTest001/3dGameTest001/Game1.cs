@@ -146,7 +146,7 @@ namespace _3dGameTest001
                 ModelMesh mesh = model.Meshes[i];
                 foreach (BasicEffect effect in mesh.Effects)
                 {
-                    //effect.EnableDefaultLighting();
+                    effect.EnableDefaultLighting();
                     effect.TextureEnabled = true;
                     effect.FogEnabled = false;
                     effect.FogColor = Color.CornflowerBlue.ToVector3(); // For best results, ake this color whatever your background is.
@@ -154,9 +154,9 @@ namespace _3dGameTest001
                     effect.FogEnd = 10.25f;
                     effect.LightingEnabled = true; // turn on the lighting subsystem.
                     effect.PreferPerPixelLighting = true;
-                    //effect.DirectionalLight0.DiffuseColor = new Vector3(0.5f, 0, 0); // a red light
-                    //effect.DirectionalLight0.Direction = new Vector3(1, 0, 0);  // coming along the x-axis
-                    //effect.DirectionalLight0.SpecularColor = new Vector3(0, 1, 0); // with green highlights
+                    effect.DirectionalLight0.DiffuseColor = new Vector3(0.5f, 0, 0); // a red light
+                    effect.DirectionalLight0.Direction = new Vector3(1, 0, 0);  // coming along the x-axis
+                    effect.DirectionalLight0.SpecularColor = new Vector3(0, 1, 0); // with green highlights
                     //effect.DirectionalLight0.Enabled = false;
                     //effect.AmbientLightColor = new Vector3(0.2f, 0.2f, 0.2f);
                     //effect.EmissiveColor = new Vector3(1, 0, 0);

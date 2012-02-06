@@ -22,7 +22,7 @@ namespace WindowsGame1
         private int totalFrames;
 
 
-        private Vector2 location = 0;
+        private Vector2 location = new Vector2();
         
 
         private float angle;

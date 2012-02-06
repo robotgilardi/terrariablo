@@ -7,13 +7,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\Helicopter.xnb</Output>
+      <Output>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\Helicopter.xnb</Output>
       <Time>2009-01-03T09:30:48-06:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\models\Helicopter_0.xml</Key>
-        <Value>2012-01-22T20:41:21.8086937-06:00</Value>
+        <Value>2012-01-23T12:46:03.0468961-06:00</Value>
       </Dependency>
-      <Request>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Request>
+      <Request>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Request>
     </Item>
     <Item>
       <Source>models\HelicopterHeightMap.tga</Source>
@@ -21,7 +21,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterHeightMap.xnb</Output>
+      <Output>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterHeightMap.xnb</Output>
       <Time>2009-01-22T14:23:42-06:00</Time>
     </Item>
     <Item>
@@ -30,7 +30,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterNormalMap.xnb</Output>
+      <Output>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterNormalMap.xnb</Output>
       <Time>2009-01-22T14:23:54-06:00</Time>
     </Item>
     <Item>
@@ -39,7 +39,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture.xnb</Output>
+      <Output>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture.xnb</Output>
       <Time>2009-01-03T09:24:00-06:00</Time>
     </Item>
     <Item>
@@ -62,19 +62,19 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Output>
+      <Output>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\models\HelicopterTexture_0.xnb</Output>
       <Time>2009-01-03T09:24:00-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>HiDef</TargetProfile>
+      <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -102,8 +102,8 @@
         <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-01-22T16:36:36.4652274-06:00</Value>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-01-23T10:22:50.4042855-06:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
