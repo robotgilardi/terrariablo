@@ -27,7 +27,7 @@ namespace Terrariablo
         public bool m_cycle = true;
         public Rectangle m_sourceRect = new Rectangle();
         public Rectangle m_destinationRectangle = new Rectangle();
-        int m_startFrame = 0;
+        int m_startFrame = 4;
         int m_endFrame = 0;
         public int m_frameWidth;
         public int m_frameHeight;
@@ -51,7 +51,7 @@ namespace Terrariablo
             m_position = position;
             m_startFrame = 0;
             m_endFrame = m_frames;
-
+            m_frame = m_startFrame;
             float var1 = (m_texture.Width & 2);
             float var2 = (m_texture.Height & 2);
 
@@ -67,6 +67,24 @@ namespace Terrariablo
             if (m_active)
                 spriteBatch.Draw(m_texture, m_destinationRectangle, m_sourceRect,Color.White);
         }
+        public void SetMatrixPosition(int frame)
+        {
+            m_row = 0;
+            m_col = 0;
+            for (int i = 0; i < frame; i++)
+            {
+                m_col++;
+                if (m_col==m_columns)
+                {
+                    m_col = 0;
+                    m_row++;
+                    if (m_row == m_rows)
+                    {
+                        m_row = 0;
+                    }
+                }
+            }
+        }
 
         public void Next(GameTime gameTime)
         {
@@ -74,37 +92,30 @@ namespace Terrariablo
                 return;
 
             m_currentTime += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
-
+            
             if (m_currentTime > m_FPS)
             {
                 m_frame++;
-                if (m_frame == m_frames)
+
+
+                if (m_frame > m_endFrame)
                 {
-                    m_frame = 0;
-                    m_row = 0;
-                    m_col = 0;
+                    m_frame = m_startFrame;
+                    SetMatrixPosition(m_startFrame);
                     if (m_looping == false)
                         m_active = false;
                 }
                 else
                 {
-                    if (m_frame == 0)
+                    m_col++;
+                    if (m_col >= m_columns)
                     {
                         m_col = 0;
-                        m_row = 0;
+                        m_row++;
                     }
-                    else
+                    if (m_row >= m_rows)
                     {
-                        m_col++;
-                        if (m_col > m_columns - 1)
-                        {
-                            m_col = 0;
-                            m_row++;
-                        }
-                        if (m_row > m_rows)
-                        {
-                            m_row = 0;
-                        }
+                        m_row = 0;
                     }
                 }
                 m_currentTime = 0;
