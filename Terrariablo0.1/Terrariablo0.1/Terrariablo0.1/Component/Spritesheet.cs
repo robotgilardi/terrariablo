@@ -132,6 +132,7 @@ namespace Terrariablo
                     (int)m_position.Y - (int)(m_frameHeight * m_scale) / 2,
                     (int)(m_frameWidth * m_scale),
                     (int)(m_frameHeight * m_scale));
+            //gittest
         }
         public override void Update(GameTime gameTime, Entity entity)
         {
