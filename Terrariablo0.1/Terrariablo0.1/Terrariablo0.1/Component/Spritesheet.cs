@@ -133,6 +133,7 @@ namespace Terrariablo
                     (int)(m_frameWidth * m_scale),
                     (int)(m_frameHeight * m_scale));
             //gittest
+            //gittest2
         }
         public override void Update(GameTime gameTime, Entity entity)
         {
