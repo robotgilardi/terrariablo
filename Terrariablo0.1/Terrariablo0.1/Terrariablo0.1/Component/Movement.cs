@@ -9,6 +9,9 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Terrariablo
 {
+    /// <summary>
+    ///  Temp movment functions
+    /// </summary>
     class Movement : Component
     {
         enum State{
@@ -53,10 +56,14 @@ namespace Terrariablo
         {
             if (m_currentKeyboardState.IsKeyDown(Keys.Left) || m_currentKeyboardState.IsKeyDown(Keys.A))
             {
+                m_ent.GetComponent<Spritesheet>().setBackwards();
                 Collides(-m_speed, 0);
             }
             if (m_currentKeyboardState.IsKeyDown(Keys.Right) || m_currentKeyboardState.IsKeyDown(Keys.D))
+            {
+                m_ent.GetComponent<Spritesheet>().setForward();
                 Collides(m_speed, 0);
+            }
             if (m_currentKeyboardState.IsKeyDown(Keys.Up) || m_currentKeyboardState.IsKeyDown(Keys.W))
                 Collides(0, -m_speed);
             if (m_currentKeyboardState.IsKeyDown(Keys.Down) || m_currentKeyboardState.IsKeyDown(Keys.S))
@@ -68,9 +75,6 @@ namespace Terrariablo
         int m_jumpForce = 10;
         public void UpdateJumping(GameTime gameTime, KeyboardState keyboardState)
         {
-
-
-
             if (m_currentKeyboardState.IsKeyDown(Keys.Space) && m_currentState != State.Jumping)
             {
                 m_currentState = State.Jumping;

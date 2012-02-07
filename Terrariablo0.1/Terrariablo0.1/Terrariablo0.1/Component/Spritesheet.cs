@@ -34,6 +34,37 @@ namespace Terrariablo
         public bool m_active;
         public bool m_looping = true;
 
+        // Set this to have specific frames for:
+        //
+        // Idle
+        //
+        // Walking
+        //  Forward
+        //  Backwards
+        //
+        // Running
+        //
+        // Jump state
+        // 
+        public void setForward()
+        {
+            setRange(0, 0);
+        }
+        public void setBackwards()
+        {
+            setRange(5, 9);
+        }
+        public void setJumping()
+        {
+            setRange(10, 10);
+        }
+
+
+        public void setRange(int start, int end)
+        {
+            m_startFrame = start;
+            m_endFrame = end;
+        }
         public void Initialize(ContentManager content, String texture,Vector2 position, int frameWidth, int frameHeight, int rows, int columns, int framerate = 24, int row = 0, int col = 0, float scale = 1, bool looping = true)
         {
             m_texture = content.Load<Texture2D>(texture);
@@ -121,6 +152,8 @@ namespace Terrariablo
                 m_currentTime = 0;
             }
 
+
+            // separate this and move position so not creating a ew rect every time
             m_sourceRect = new Rectangle(
                 m_frameWidth * m_col,
                 m_frameHeight * m_row,

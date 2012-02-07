@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Terrariablo
 {
+    /// <summary>
+    /// Collision entity
+    /// </summary>
     class CEntity :Entity
     {
         public Collision m_collision;

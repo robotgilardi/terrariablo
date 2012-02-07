@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.GamerServices;
 
-//gittest2
+//gittest2  
 namespace Terrariablo
 {
     class Sprite : Component
@@ -23,6 +23,8 @@ namespace Terrariablo
         {
             m_color = Color.White;
         }
+            
+           
         public void Initialize(Texture2D texture, Vector2 position)
         {
             m_texture = texture;
