@@ -33,22 +33,28 @@ namespace Terrariablo
         public int m_frameHeight;
         public bool m_active;
         public bool m_looping = true;
-
+        public bool m_useFrameblend = false;
         // Set this to have specific frames for:
-        //
-        // Idle
-        //
-        // Walking
-        //  Forward
-        //  Backwards
-        //
-        // Running
-        //
-        // Jump state
-        // 
+        State m_state = State.Idle;
+        enum State
+        {
+            Idle,
+            Forwards,
+            Backwards,
+            Running,
+            Jumping
+        }
+        public void setRunning()
+        {
+            setRange(0, 1);
+        }
+        public void setIdle()
+        {
+            setRange(2, 3);
+        }
         public void setForward()
         {
-            setRange(0, 0);
+            setRange(6, 7);
         }
         public void setBackwards()
         {
@@ -88,6 +94,19 @@ namespace Terrariablo
 
             m_active = (((m_texture.Width & 2) == 0 && (m_texture.Height & 2) == 0)) ? true : false;
 
+
+            m_sourceRect = new Rectangle(
+                m_frameWidth * m_col,
+                m_frameHeight * m_row,
+                m_frameWidth,
+                m_frameHeight);
+            m_destinationRectangle =
+                new Rectangle(
+                    (int)m_position.X - (int)(m_frameWidth * m_scale) / 2,
+                    (int)m_position.Y - (int)(m_frameHeight * m_scale) / 2,
+                    (int)(m_frameWidth * m_scale),
+                    (int)(m_frameHeight * m_scale));
+
         }
         public void SetPosition(Vector2 pos)
         {
@@ -123,12 +142,9 @@ namespace Terrariablo
                 return;
 
             m_currentTime += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
-            
             if (m_currentTime > m_FPS)
             {
                 m_frame++;
-
-
                 if (m_frame > m_endFrame)
                 {
                     m_frame = m_startFrame;
@@ -153,24 +169,36 @@ namespace Terrariablo
             }
 
 
-            // separate this and move position so not creating a ew rect every time
-            m_sourceRect = new Rectangle(
-                m_frameWidth * m_col,
-                m_frameHeight * m_row,
-                m_frameWidth,
-                m_frameHeight);
-            m_destinationRectangle =
-                new Rectangle(
-                    (int)m_position.X - (int)(m_frameWidth * m_scale) / 2,
-                    (int)m_position.Y - (int)(m_frameHeight * m_scale) / 2,
-                    (int)(m_frameWidth * m_scale),
-                    (int)(m_frameHeight * m_scale));
-            //gittest
-            //gittest2
+            m_sourceRect.X = m_col;
+            m_sourceRect.Y = m_row;
+            m_destinationRectangle.X = (int)m_position.X - (int)(m_frameWidth * m_scale) / 2;
+            m_destinationRectangle.Y = (int)m_position.Y - (int)(m_frameHeight * m_scale) / 2;
         }
         public override void Update(GameTime gameTime, Entity entity)
         {
             Next(gameTime);
+            switch(m_state)
+            {
+                case State.Backwards:
+                    setBackwards();
+                    break;
+                case State.Forwards:
+                    setForward();
+                    break;
+                case State.Idle:
+                    setIdle();
+                    break;
+                case State.Jumping:
+                    setJumping();
+                    break;
+                case State.Running:
+                    setRunning();
+                    break;
+                default:
+                    setIdle();
+                    break;
+            }
+
             m_position = entity.m_position;
         }
     }

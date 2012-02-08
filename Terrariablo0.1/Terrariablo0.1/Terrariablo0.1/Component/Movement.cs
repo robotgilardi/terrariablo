@@ -56,6 +56,7 @@ namespace Terrariablo
         {
             if (m_currentKeyboardState.IsKeyDown(Keys.Left) || m_currentKeyboardState.IsKeyDown(Keys.A))
             {
+                // Try on non-spritesheet and set case
                 m_ent.GetComponent<Spritesheet>().setBackwards();
                 Collides(-m_speed, 0);
             }
