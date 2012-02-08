@@ -54,21 +54,46 @@ namespace Terrariablo
         }
         public void UpdateMovement(KeyboardState keyboardState)
         {
+            Spritesheet spritesheet = m_ent.GetComponent<Spritesheet>();
+
+            //Pick priorities for this?
             if (m_currentKeyboardState.IsKeyDown(Keys.Left) || m_currentKeyboardState.IsKeyDown(Keys.A))
             {
                 // Try on non-spritesheet and set case
-                m_ent.GetComponent<Spritesheet>().setBackwards();
+                spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
                 Collides(-m_speed, 0);
             }
-            if (m_currentKeyboardState.IsKeyDown(Keys.Right) || m_currentKeyboardState.IsKeyDown(Keys.D))
+            else if (m_currentKeyboardState.IsKeyDown(Keys.Right) || m_currentKeyboardState.IsKeyDown(Keys.D))
             {
-                m_ent.GetComponent<Spritesheet>().setForward();
+                if (m_currentKeyboardState.IsKeyDown(Keys.LeftShift) || m_currentKeyboardState.IsKeyDown(Keys.RightShift))
+                {
+                    spritesheet.SetState(spritesheet.RUNNING); // Change these to globals
+                }
+                else 
+                   spritesheet.SetState(spritesheet.FORWARD); // Change these to globals
                 Collides(m_speed, 0);
             }
-            if (m_currentKeyboardState.IsKeyDown(Keys.Up) || m_currentKeyboardState.IsKeyDown(Keys.W))
+            else if (m_currentKeyboardState.IsKeyDown(Keys.Up) || m_currentKeyboardState.IsKeyDown(Keys.W))
+            {
+                spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
                 Collides(0, -m_speed);
-            if (m_currentKeyboardState.IsKeyDown(Keys.Down) || m_currentKeyboardState.IsKeyDown(Keys.S))
+            }
+            else if (m_currentKeyboardState.IsKeyDown(Keys.Down) || m_currentKeyboardState.IsKeyDown(Keys.S))
+            {
+                spritesheet.SetState(spritesheet.FORWARD); // Change these to globals   
                 Collides(0, m_speed);
+            }
+            //Not really movement but not sure where else to put this
+            else if (m_currentKeyboardState.IsKeyDown(Keys.LeftControl))
+            {
+                spritesheet.SetState(spritesheet.CROUCHING);
+            }
+            else
+            {
+                // Put falling state in here
+
+                spritesheet.SetState(spritesheet.IDLE); // Change these to globals   
+            }
         }
         int m_jumpheight = 0;
         int m_maxJumpHeight = 15;

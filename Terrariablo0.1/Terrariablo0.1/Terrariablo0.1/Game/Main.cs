@@ -61,30 +61,43 @@ namespace Terrariablo
         }
         protected void LoadTiles(ContentManager content)
         {
+            // Basically this is draw tiles, can split up to tile logic later
             m_tileImages[0] = "images/terraria/Item_138";
-
+            m_tileImages[1] = "images/terraria/Item_137";
             Vector2 tilePosition = new Vector2();
-            tilePosition.Y = 410;
+            tilePosition.Y = 600 - 5 * 16;
+
+            String curentTileImage = m_tileImages[0];
+
             for (int i = 0; i < 5; i++)
-			{
+            {
                 for (int j = 0; j < 50; j++)
                 {
+                    if (j == 1 || j == 50)
+                    {
+                        curentTileImage = m_tileImages[1];
+                    }
+                    else
+                    {
+                        curentTileImage = m_tileImages[0];
+
+                    }
                     Tile t = new Tile();
-                    t.Initialize(content, m_tileImages[0], tilePosition);
+                    t.Initialize(content, curentTileImage, tilePosition);
                     m_tiles.Add(t);
                     m_entities.Add(t);
-                    
                     tilePosition.X += 16;
                 }
                 tilePosition.Y += 16;
                 tilePosition.X = 0;
+            }   
+        }
+        protected void DrawTiles(ContentManager content)
+        {
 
-			}
-            
         }
         protected override void UnloadContent()
         {
-
         }
 
         protected override void Update(GameTime gameTime)
@@ -95,7 +108,6 @@ namespace Terrariablo
             {
                 ent.Update(gameTime);
             }
-
             base.Update(gameTime);
         }
 
@@ -107,7 +119,6 @@ namespace Terrariablo
             {
                 ent.Draw(m_spriteBatch);
             }
-
             m_spriteBatch.End();
             base.Draw(gameTime);
         }
