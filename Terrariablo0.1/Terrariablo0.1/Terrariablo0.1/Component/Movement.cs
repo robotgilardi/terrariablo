@@ -24,6 +24,8 @@ namespace Terrariablo
 
         KeyboardState m_currentKeyboardState;
         public int m_speed = 8;
+        public int m_runSpeed = 16;
+        public int m_walkSpeed = 8;
         public Rectangle m_bounds;
         private ArrayList m_entityList;
         private CEntity m_ent;
@@ -45,7 +47,7 @@ namespace Terrariablo
         {
             m_currentKeyboardState = Keyboard.GetState();
             UpdateMovement(m_currentKeyboardState);
-            UpdateJumping(gameTime, m_currentKeyboardState);
+            UpdateJumping(gameTime, m_currentKeyboardState);//State doesn't update for some reason, need to move in to movement
             UpdateGravity();
 
             
@@ -59,40 +61,61 @@ namespace Terrariablo
             //Pick priorities for this?
             if (m_currentKeyboardState.IsKeyDown(Keys.Left) || m_currentKeyboardState.IsKeyDown(Keys.A))
             {
-                // Try on non-spritesheet and set case
-                spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
+                if (!(m_currentState == State.Jumping))
+                {
+                    spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
+                }
                 Collides(-m_speed, 0);
+                // Try on non-spritesheet and set case
             }
             else if (m_currentKeyboardState.IsKeyDown(Keys.Right) || m_currentKeyboardState.IsKeyDown(Keys.D))
             {
-                if (m_currentKeyboardState.IsKeyDown(Keys.LeftShift) || m_currentKeyboardState.IsKeyDown(Keys.RightShift))
+                if (!(m_currentState == State.Jumping))
                 {
-                    spritesheet.SetState(spritesheet.RUNNING); // Change these to globals
+                    if (m_currentKeyboardState.IsKeyDown(Keys.LeftShift) || m_currentKeyboardState.IsKeyDown(Keys.RightShift))
+                    {
+                        spritesheet.SetState(spritesheet.RUNNING); // Change these to globals
+                        //m_speed = m_runSpeed; // Isn't updating correctly
+                    }
+                    else
+                    {
+                        spritesheet.SetState(spritesheet.FORWARD); // Change these to globals
+                        m_speed = m_walkSpeed;
+                    }
                 }
-                else 
-                   spritesheet.SetState(spritesheet.FORWARD); // Change these to globals
                 Collides(m_speed, 0);
             }
             else if (m_currentKeyboardState.IsKeyDown(Keys.Up) || m_currentKeyboardState.IsKeyDown(Keys.W))
             {
-                spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
+                if (!(m_currentState == State.Jumping))
+                {
+                    spritesheet.SetState(spritesheet.BACKWARD); // Change these to globals
+                }
                 Collides(0, -m_speed);
             }
             else if (m_currentKeyboardState.IsKeyDown(Keys.Down) || m_currentKeyboardState.IsKeyDown(Keys.S))
             {
-                spritesheet.SetState(spritesheet.FORWARD); // Change these to globals   
+                if (!(m_currentState == State.Jumping))
+                {
+                    spritesheet.SetState(spritesheet.FORWARD); // Change these to globals   
+                }
                 Collides(0, m_speed);
             }
             //Not really movement but not sure where else to put this
             else if (m_currentKeyboardState.IsKeyDown(Keys.LeftControl))
             {
-                spritesheet.SetState(spritesheet.CROUCHING);
+                if (!(m_currentState == State.Jumping))
+                {
+                    spritesheet.SetState(spritesheet.CROUCHING);
+                }
             }
             else
             {
                 // Put falling state in here
-
-                spritesheet.SetState(spritesheet.IDLE); // Change these to globals   
+                if (!(m_currentState == State.Jumping))
+                {
+                    spritesheet.SetState(spritesheet.IDLE); // Change these to globals   
+                }
             }
         }
         int m_jumpheight = 0;
@@ -105,6 +128,7 @@ namespace Terrariablo
             {
                 m_currentState = State.Jumping;
             }
+
             if (m_currentState == State.Jumping)
             {
                 if (m_jumpheight < m_maxJumpHeight)

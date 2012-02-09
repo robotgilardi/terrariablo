@@ -137,8 +137,6 @@ namespace Terrariablo
         {
             m_startFrame = start;
             m_endFrame = end;
-            Console.WriteLine(start);
-            Console.WriteLine(end);
         }
         public void Initialize(ContentManager content, String texture,Vector2 position, int frameWidth, int frameHeight, int rows, int columns, int framerate = 24, int row = 0, int col = 0, float scale = 1, bool looping = true)
         {
@@ -237,18 +235,20 @@ namespace Terrariablo
                 m_currentTime = 0;
             }
 
-
+            
             m_sourceRect = new Rectangle(
                 m_frameWidth * m_col,
                 m_frameHeight * m_row,
                 m_frameWidth,
                 m_frameHeight);
-            m_destinationRectangle =
+            
+             m_destinationRectangle =
                 new Rectangle(
                     (int)m_position.X - (int)(m_frameWidth * m_scale) / 2,
                     (int)m_position.Y - (int)(m_frameHeight * m_scale) / 2,
                     (int)(m_frameWidth * m_scale),
                     (int)(m_frameHeight * m_scale));
+            //Doesn't work:
             //m_sourceRect.X = m_col;
             //m_sourceRect.Y = m_row;
             //m_destinationRectangle.X = (int)m_position.X - (int)(m_frameWidth * m_scale) / 2;
@@ -258,7 +258,8 @@ namespace Terrariablo
         {
             Next(gameTime);
             UpdateFrameRanges();
-            Console.WriteLine(m_state);
+            if (m_state == State.Jumping)
+                Console.WriteLine(m_state);
             m_position = entity.m_position;
         }
     }

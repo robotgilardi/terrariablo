@@ -123,6 +123,7 @@
   <ItemGroup>
     <Content Include="Game\Game.ico" />
     <Content Include="Game\GameThumbnail.png" />
+    <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Terrariablo0.1Content\Terrariablo0.1Content.contentproj">

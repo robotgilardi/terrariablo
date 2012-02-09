@@ -65,15 +65,16 @@ namespace Terrariablo
             m_tileImages[0] = "images/terraria/Item_138";
             m_tileImages[1] = "images/terraria/Item_137";
             Vector2 tilePosition = new Vector2();
-            tilePosition.Y = 600 - 5 * 16;
 
             String curentTileImage = m_tileImages[0];
 
+            tilePosition.Y = 600 - 5 * 16;
             for (int i = 0; i < 5; i++)
             {
+                //Whitepapers, GO!
                 for (int j = 0; j < 50; j++)
                 {
-                    if (j == 1 || j == 50)
+                    if (j == 0 || j == 49 || i == 0 || i ==4)
                     {
                         curentTileImage = m_tileImages[1];
                     }
@@ -90,7 +91,9 @@ namespace Terrariablo
                 }
                 tilePosition.Y += 16;
                 tilePosition.X = 0;
-            }   
+            }
+            tilePosition.X = 0;
+            tilePosition.Y = 0;
         }
         protected void DrawTiles(ContentManager content)
         {
