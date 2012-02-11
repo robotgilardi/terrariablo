@@ -1,0 +1,6 @@
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\bin\x86\Debug\Primitives.exe
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\bin\x86\Debug\Primitives.pdb
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\obj\x86\Debug\Primitives.exe
+C:\Users\Administrator\VCProjects\Primitives\Primitives\Primitives\obj\x86\Debug\Primitives.pdb

@@ -1,0 +1,6 @@
+Content\Ship.xnb
+Content\ship2.xnb
+Content\ShipTexture.xnb
+Content\ShipTexture_0.xnb
+Content\metal.xnb
+Content\metal_0.xnb

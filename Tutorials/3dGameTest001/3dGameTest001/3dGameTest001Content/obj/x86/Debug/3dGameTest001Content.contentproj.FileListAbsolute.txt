@@ -1,0 +1,2 @@
+C:\Users\Administrator\VCProjects\3dGameTest001\3dGameTest001\3dGameTest001Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Robot\terrariablo\3dGameTest001\3dGameTest001\3dGameTest001Content\obj\x86\Debug\ResolveAssemblyReference.cache

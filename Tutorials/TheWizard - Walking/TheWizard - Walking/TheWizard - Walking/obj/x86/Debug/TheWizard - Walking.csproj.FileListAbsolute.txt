@@ -1,0 +1,7 @@
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\bin\x86\Debug\Content\WizardSquare.xnb
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\bin\x86\Debug\TheWizard - Walking.exe
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\bin\x86\Debug\TheWizard - Walking.pdb
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\obj\x86\Debug\TheWizard - Walking.exe
+C:\Users\Robot\terrariablo\TheWizard - Walking\TheWizard - Walking\TheWizard - Walking\obj\x86\Debug\TheWizard - Walking.pdb

@@ -14,8 +14,8 @@ namespace Terrariablo
     class Entity
     {
         public Vector2 m_position;
-        public int m_width = new int();
-        public int m_height = new int();
+        public int m_width;
+        public int m_height;
         protected ArrayList m_components = new ArrayList();
         public T GetComponent<T>()
         {

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>LargeAsteroid.fbx</Source>
+      <Name>LargeAsteroid</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\LargeAsteroid.xnb</Output>
+      <Time>2008-12-14T09:32:10-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\LargeAsteroid_0.xml</Key>
+        <Value>2012-01-22T21:44:19.6648228-06:00</Value>
+      </Dependency>
+      <Request>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\AsteroidTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Ship.fbx</Source>
+      <Name>Ship</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Ship.xnb</Output>
+      <Time>2008-12-14T09:33:28-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Ship_0.xml</Key>
+        <Value>2012-01-22T21:44:20.1608512-06:00</Value>
+      </Dependency>
+      <Request>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ShipTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>ship2.x</Source>
+      <Name>ship2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ship2.xnb</Output>
+      <Time>2008-12-19T23:44:28-06:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\ship2_0.xml</Key>
+        <Value>2012-01-22T21:44:20.383864-06:00</Value>
+      </Dependency>
+      <Request>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\metal_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>AsteroidTexture.png</Source>
+      <Name>AsteroidTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\AsteroidTexture.xnb</Output>
+      <Time>2008-12-14T09:31:04-06:00</Time>
+    </Item>
+    <Item>
+      <Source>metal.jpg</Source>
+      <Name>metal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\metal.xnb</Output>
+      <Time>2008-12-19T23:44:38-06:00</Time>
+    </Item>
+    <Item>
+      <Source>ShipTexture.png</Source>
+      <Name>ShipTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ShipTexture.xnb</Output>
+      <Time>2008-12-14T09:31:04-06:00</Time>
+    </Item>
+    <Item>
+      <Source>LargeAsteroid.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\LargeAsteroid_0.xml</Output>
+      <Time>2008-12-14T09:32:10-06:00</Time>
+    </Item>
+    <Item>
+      <Source>AsteroidTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\AsteroidTexture_0.xnb</Output>
+      <Time>2008-12-14T09:31:04-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Ship.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Ship_0.xml</Output>
+      <Time>2008-12-14T09:33:28-06:00</Time>
+    </Item>
+    <Item>
+      <Source>ShipTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\ShipTexture_0.xnb</Output>
+      <Time>2008-12-14T09:31:04-06:00</Time>
+    </Item>
+    <Item>
+      <Source>ship2.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\ship2_0.xml</Output>
+      <Time>2008-12-19T23:44:28-06:00</Time>
+    </Item>
+    <Item>
+      <Source>metal.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\metal_0.xnb</Output>
+      <Time>2008-12-19T23:44:38-06:00</Time>
+    </Item>
+    <Item>
+      <Source>font.spritefont</Source>
+      <Name>font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2012-01-22T21:46:41.5409377-06:00</Time>
+    </Item>
+    <Item>
+      <Source>The Path of the Goblin King.wav</Source>
+      <Name>The Path of the Goblin King</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\The Path of the Goblin King.xnb</Output>
+      <Time>2012-01-22T22:05:04.2371247-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Not As It Seems.mp3</Source>
+      <Name>Not As It Seems</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Not As It Seems.xnb</Output>
+      <Extra>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\Not As It Seems.wma</Extra>
+      <Time>2012-01-22T22:09:07.5158344-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelectionContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelectionContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Administrator\VCProjects\ObjectSelection\ObjectSelection\ObjectSelection\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-01-22T16:36:36.4652274-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

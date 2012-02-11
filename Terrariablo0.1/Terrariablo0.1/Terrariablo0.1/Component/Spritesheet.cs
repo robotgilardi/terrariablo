@@ -45,6 +45,7 @@ namespace Terrariablo
         public String JUMPING = "Jumping";
         public String CROUCHING = "Crouching";
         public String IDLE = "Idle";
+        public String FALLING = "Falling";
 
         enum State
         {
@@ -53,7 +54,8 @@ namespace Terrariablo
             Backwards,
             Running,
             Crouching,
-            Jumping
+            Jumping,
+            Falling
         }
         public void SetState(String state)
         {
@@ -78,6 +80,10 @@ namespace Terrariablo
             {
                 m_state = State.Crouching;
             }
+            else if (state == FALLING)
+            {
+                m_state = State.Falling;
+            }
             else
             {
                 m_state = State.Idle;
@@ -98,13 +104,16 @@ namespace Terrariablo
                     setRange(6, 6);
                     break;
                 case State.Idle:
-                    setRange(9, 9);
+                    setRange(0, m_frames);
                     break;
                 case State.Running:
                     setRange(11, 11);
                     break;
                 case State.Crouching:
                     setRange(14, 14);
+                    break;
+                case State.Falling:
+                    setRange(15, 15);
                     break;
                 default:
                     setRange(0, m_frames);
